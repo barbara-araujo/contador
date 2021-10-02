@@ -24,7 +24,7 @@
                 text-align: center;
                 color: white;
                 text-transform: uppercase;
-                padding: 30px;
+                padding: 1.2em;
                 border-radius: 20px;
                 box-shadow: 0 0 50px rgb(255, 50, 255);
             }
@@ -36,8 +36,20 @@
             button {
                 font-size: 30px;
                 line-height: .5em;
-                border-radius: .15em;
-                padding: .5em 1em;
+                border-radius: .25em;
+                padding: .5em 1.2em;
+                border: none;
+                margin: 0 .1em;
+                color: white;
+                background: grey;
+            }
+
+            .success {
+                background: #1EC11A;
+            }
+
+            .danger {
+                background: #C92D2D;
             }
         </style>
     </head>
@@ -46,8 +58,8 @@
         <div>
             <h1>Contador</h1>
             <p>0</p>
-            <button><i class="fas fa-minus"></i></button>
-            <button><i class="fas fa-plus"></i></button>
+            <button class="danger"><i class="fas fa-minus"></i></button>
+            <button class="success"><i class="fas fa-plus"></i></button>
         </div>
     </body>  
 </html>
